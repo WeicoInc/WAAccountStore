@@ -158,10 +158,6 @@ NSString * const WAAccountStoreAccountsKey = @"WAAccountStoreAccounts";
         accounts[index] = newAccount;
     }
     self.cachedAccounts = accounts;
-    
-    if (index == 0) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:WAAccountStoreCurrentAccountUpdatedNotification object:self];
-    }
 }
 
 @end
