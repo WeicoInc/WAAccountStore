@@ -15,7 +15,7 @@
 
 @property (nonatomic,copy) WAAccountCredential *credential;
 
-@property (nonatomic,copy) WAAccountUserInfo userInfo;
+@property (nonatomic,copy) WAAccountUserInfo *userInfo;
 
 @end
 
@@ -23,7 +23,7 @@
 
 - (instancetype)initWithIdentifier:(NSString *)identifier
                         credential:(WAAccountCredential *)credential
-                          userInfo:(WAAccountUserInfo)userInfo
+                          userInfo:(WAAccountUserInfo *)userInfo
 {
     if (self = [super init]) {
         NSParameterAssert(identifier);
